@@ -54,38 +54,40 @@
                 </div>
                 <div class="table-responsive-general">
                     <table id="hola" v-resize="changeTable" class="table table-card table-striped">
-                        <thead>
-                            <tr>
-                                <th>N°</th>
-                                <th>Item</th>
-                                <th>Item</th>
-                                <th>Opción</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>01</td>
-                                <td>Producto 01</td>
-                                <td>Producto 01</td>
-                                <td>
-                                    <button class="btn-link-primary">
-                                        <i class="fa fa-pencil"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>02</td>
-                                <td>Producto 02</td>
-                                <td>Producto 02</td>
-                                <td>
-                                    <button class="btn-link-primary">
-                                        <i class="fa fa-pencil"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
+                <Table2 id="hola2">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Item</th>
+                            <th>Item</th>
+                            <th>Opción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Producto 01</td>
+                            <td>Producto 01</td>
+                            <td>
+                                <button class="btn-link-primary">
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Producto 02</td>
+                            <td>Producto 02</td>
+                            <td>
+                                <button class="btn-link-primary">
+                                    <i class="fa fa-pencil"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </Table2>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-sm-6">
@@ -130,6 +132,7 @@
 <script>
 import Input from '../components/dg-input.vue'
 import Text2 from '../components/dg-text.vue'
+import Table2 from '../components/dg-table.vue'
 // import FullCalendar from '@fullcalendar/vue'
 // import dayGridPlugin from '@fullcalendar/daygrid'
 import resize from 'vue-resize-directive'
@@ -173,7 +176,8 @@ export default {
     },
     components:{
         Input, 
-        Text2
+        Text2,
+        Table2
         // FullCalendar
     },
     methods: {

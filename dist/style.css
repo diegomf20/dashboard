@@ -396,7 +396,16 @@ body{background: #DCF0F1}
     display: block;
 }
 
-
+/**
+*   table responsive
+*/
+.table-responsive-general table{
+    width: 100%;
+}
+.table-responsive-general table tr.open{
+    display: block;
+    width: 100%;
+}
 .table-responsive-general{
     position: relative;
     display: block;
